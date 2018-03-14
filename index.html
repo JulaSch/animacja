@@ -6,6 +6,38 @@
 	<title>ćwiczenia z js</title>
 </head>
 <body>
+	<button id="jeden" onclick="ziemniak()">Wciśnij mnie </button>
+
+	<button id="dwa" onclick="ciastka()">NACISKAJ</button>
+
+	<button id="trzy" onclick="babeczka()">NACIŚNIJ</button>
+
+	<p id="demo"></p>
+	<script type="text/javascript">
+		
+		function japko(a,b){
+			console.log(a+b);
+		}
+
+		japko(2,5);
+
+		function ziemniak(){
+			alert("ojejku ojej");
+		}
+
+		function ciastka(){
+			confirm ("zgadzasz się?");
+		}
+
+		function babeczka(){
+			var imie = prompt("Jak masz na imię?", "Harry Potter");
+			if (imie != null) {
+				document.getElementById("demo").innerHTML = "Hello " + imie + " jak się masz?";
+			}
+
+		}
+
+	</script>
 
 </body>
 </html>
